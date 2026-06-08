@@ -1,0 +1,217 @@
+{
+    "shape": [
+        11397,
+        11
+    ],
+    "dtypes": {
+        "patient_id": "str",
+        "name": "str",
+        "gender": "str",
+        "age": "float64",
+        "bmi": "float64",
+        "blood_pressure": "float64",
+        "glucose_level": "float64",
+        "cholesterol": "int64",
+        "smoking_status": "str",
+        "exercise_hours_per_week": "float64",
+        "health_risk": "str"
+    },
+    "missing": {
+        "patient_id": 0,
+        "name": 0,
+        "gender": 0,
+        "age": 0,
+        "bmi": 0,
+        "blood_pressure": 0,
+        "glucose_level": 0,
+        "cholesterol": 0,
+        "smoking_status": 0,
+        "exercise_hours_per_week": 0,
+        "health_risk": 0
+    },
+    "descriptive": {
+        "basic": {
+            "age": {
+                "count": 11397.0,
+                "mean": 48.420549267351056,
+                "std": 17.937186400426217,
+                "min": 18.0,
+                "25%": 33.0,
+                "50%": 48.0,
+                "75%": 64.0,
+                "max": 79.0
+            },
+            "bmi": {
+                "count": 11397.0,
+                "mean": 27.066573659735017,
+                "std": 4.972585702962547,
+                "min": 13.5,
+                "25%": 23.68,
+                "50%": 27.06,
+                "75%": 30.47,
+                "max": 40.66
+            },
+            "blood_pressure": {
+                "count": 11397.0,
+                "mean": 134.1267877511626,
+                "std": 25.956351216105197,
+                "min": 90.0,
+                "25%": 112.0,
+                "50%": 134.0,
+                "75%": 156.0,
+                "max": 179.0
+            },
+            "cholesterol": {
+                "count": 11397.0,
+                "mean": 208.94173905413706,
+                "std": 52.158496094849625,
+                "min": 120.0,
+                "25%": 163.0,
+                "50%": 209.0,
+                "75%": 255.0,
+                "max": 299.0
+            },
+            "glucose_level": {
+                "count": 11397.0,
+                "mean": 145.07335263665877,
+                "std": 43.3759317236573,
+                "min": 70.0,
+                "25%": 108.0,
+                "50%": 146.0,
+                "75%": 182.0,
+                "max": 293.0
+            }
+        },
+        "advanced": {
+            "age": {
+                "skewness": 0.012,
+                "kurtosis": -1.217,
+                "variance": 321.743,
+                "cv": 0.37
+            },
+            "bmi": {
+                "skewness": -0.001,
+                "kurtosis": -0.14,
+                "variance": 24.727,
+                "cv": 0.184
+            },
+            "blood_pressure": {
+                "skewness": 0.004,
+                "kurtosis": -1.194,
+                "variance": 673.732,
+                "cv": 0.194
+            },
+            "cholesterol": {
+                "skewness": 0.011,
+                "kurtosis": -1.208,
+                "variance": 2720.509,
+                "cv": 0.25
+            },
+            "glucose_level": {
+                "skewness": -0.006,
+                "kurtosis": -1.151,
+                "variance": 1881.471,
+                "cv": 0.299
+            }
+        }
+    },
+    "correlations": {
+        "matrix": {
+            "age": {
+                "age": 1.0,
+                "bmi": 0.006,
+                "blood_pressure": 0.016,
+                "cholesterol": -0.0,
+                "glucose_level": -0.024
+            },
+            "bmi": {
+                "age": 0.006,
+                "bmi": 1.0,
+                "blood_pressure": 0.0,
+                "cholesterol": -0.003,
+                "glucose_level": -0.008
+            },
+            "blood_pressure": {
+                "age": 0.016,
+                "bmi": 0.0,
+                "blood_pressure": 1.0,
+                "cholesterol": -0.007,
+                "glucose_level": -0.006
+            },
+            "cholesterol": {
+                "age": -0.0,
+                "bmi": -0.003,
+                "blood_pressure": -0.007,
+                "cholesterol": 1.0,
+                "glucose_level": -0.004
+            },
+            "glucose_level": {
+                "age": -0.024,
+                "bmi": -0.008,
+                "blood_pressure": -0.006,
+                "cholesterol": -0.004,
+                "glucose_level": 1.0
+            }
+        },
+        "strong_pairs": []
+    },
+    "feature_importance": [
+        {
+            "feature": "glucose_level",
+            "f_score": 1580.31,
+            "p_value": 0.0,
+            "significant": true
+        },
+        {
+            "feature": "blood_pressure",
+            "f_score": 935.92,
+            "p_value": 0.0,
+            "significant": true
+        },
+        {
+            "feature": "cholesterol",
+            "f_score": 515.91,
+            "p_value": 0.0,
+            "significant": true
+        },
+        {
+            "feature": "bmi",
+            "f_score": 395.05,
+            "p_value": 0.0,
+            "significant": true
+        },
+        {
+            "feature": "age",
+            "f_score": 0.39,
+            "p_value": 0.53064,
+            "significant": false
+        }
+    ],
+    "distributions": {
+        "age": {
+            "shapiro_p": 0.0,
+            "normal": false,
+            "skew": 0.012
+        },
+        "bmi": {
+            "shapiro_p": 0.00017,
+            "normal": false,
+            "skew": -0.001
+        },
+        "blood_pressure": {
+            "shapiro_p": 0.0,
+            "normal": false,
+            "skew": 0.004
+        },
+        "cholesterol": {
+            "shapiro_p": 0.0,
+            "normal": false,
+            "skew": 0.011
+        },
+        "glucose_level": {
+            "shapiro_p": 0.0,
+            "normal": false,
+            "skew": -0.006
+        }
+    }
+}
